@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origen:</strong>
+  <%= @solicitud.origen %>
+</p>
+
+<p>
+  <strong>Destino:</strong>
+  <%= @solicitud.destino %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @solicitud.hora %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @solicitud.titulo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @solicitud.descripcion %>
+</p>
+
+<p>
+  <strong>Monto sugerido:</strong>
+  <%= @solicitud.monto_sugerido %>
+</p>
+
+<p>
+  <strong>Oferta driver:</strong>
+  <%= @solicitud.oferta_driver %>
+</p>
+
+<%= link_to 'Edit', edit_solicitud_path(@solicitud) %> |
+<%= link_to 'Back', solicituds_path %>

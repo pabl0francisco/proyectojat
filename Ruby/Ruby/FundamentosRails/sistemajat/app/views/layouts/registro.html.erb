@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro :: Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container">
+  
+  <a class="navbar-brand " href="#"><h3 class="font-weight-bolder">JAT</h3></a>
+  <div class="nav navbar-nav navbar-center ">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ben">Beneficios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#socios">Socios Drivers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contacto</a>
+      </li>
+    </ul>
+  </div>
+    <div class="home-btn">
+      <a href="in.html" class="btn btn-2">Iniciar sesión</a>
+    </div>
+</nav>
+
+
+<%= yield %>
+
+
+</body>
+</html>

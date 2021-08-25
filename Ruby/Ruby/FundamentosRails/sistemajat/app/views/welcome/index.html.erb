@@ -1,0 +1,75 @@
+
+   <div class="container">
+   <div class="row  mt-5">
+
+       <div class="col-md-7 mb-4">
+           <div class="home-text">
+             <h1 id="tama">Crear cuenta</h1>
+           </div>
+           <div class="contact-form">
+               <form action="/users/new" method="post" id="formt">
+                   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> <!--preguntar-->
+                   <div class="form-group">
+                       <label for="Email" >Nombre:</label>
+                       <input type="text" class="form-control" name="user[nombre]" id="nombre">
+                   </div>
+                   <div class="form-group">
+                       <label for="Password">Apellido:</label>
+                       <input type="text" class="form-control" name="user[apellido]" id="apellido">
+                   </div>
+                   <div class="form-group">
+                       <label for="Email" >Email:</label>
+                       <input type="text" class="form-control" name="user[email]" id="Email">
+                   </div>
+                   <div class="form-group">
+                       <label for="Password">Password:</label>
+                       <input type="password" class="form-control" name="user[password]" id="Password">
+                   </div>
+
+                   <div class="field form-group">
+                   <%= collection_select :user, :rol_id , Rol.all, :id, :nombre, :prompt => true  %>
+                   </div>
+
+                   <div class="home-btn">
+                       <button type="submit" class="btn btn-1 btn-primary" value="Register">Registrarse</button>
+                   </div>      
+               </form>
+           </div>
+       </div>
+       <div class="col-md-5">
+           <div class="home-text">
+             <h1>Justo a Tiempo</h1>
+             <p> Para <a href="">solicitar tu servicio de traslado</a> necesitas 
+             registrarte, recuerda que es por tu seguridad y la de nuestros drivers.  
+             </p>
+             </br>
+             <p>¿Ya tienes una cuenta?<a href="/login">&nbspInicia sesión</a></p>
+           </div>
+       </div>
+
+   </div>
+   <div class="footer-basic">
+   <footer>
+       <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+       <ul class="list-inline">
+           <li class="list-inline-item"><a href="#">Nosotros</a></li>
+           <li class="list-inline-item"><a href="#">Socios Drivers</a></li>
+           <li class="list-inline-item"><a href="#">Políticas de Privacidad</a></li>
+           <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+           <li class="list-inline-item"><a href="#">FAQ</a></li>
+       </ul>
+       <p class="copyright">JAT © 2021. Todos los derechos reservados.</p>
+   </footer>
+</div>                      
+</div> 
+
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |msg|%>
+      <div id="errors" class="alert alert-danger" role="alert">
+        <ul>
+          <li><%= msg %></li>
+        </ul>
+      </div>
+    <%end%>
+  <%end%>
+</div>

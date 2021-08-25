@@ -1,0 +1,32 @@
+<%= form_with(model: pago) do |form| %>
+  <% if pago.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pago.errors.count, "error") %> prohibited this pago from being saved:</h2>
+
+      <ul>
+        <% pago.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :monto %>
+    <%= form.text_field :monto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_transferencia %>
+    <%= form.text_field :numero_transferencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :efectivo %>
+    <%= form.text_field :efectivo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
