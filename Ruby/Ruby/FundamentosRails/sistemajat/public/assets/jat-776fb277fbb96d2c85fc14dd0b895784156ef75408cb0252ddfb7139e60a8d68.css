@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* line 1, app/assets/stylesheets/jat.scss */
+:root {
+  --main-color: #ffffff;
+  --bg-dark: #2b2c2f;
+  --main-to-dark-color: var(--main-color);
+  --dark-to-main-color: var(--bg-dark);
+  --shodow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+  --shodow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+  --black-900: #000000;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --black-000: #ffffff;
+  --black-alpha-100: rgba(0,0,0,0.05);
+}
+
+/* line 15, app/assets/stylesheets/jat.scss */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* line 24, app/assets/stylesheets/jat.scss */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+/* line 30, app/assets/stylesheets/jat.scss */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* line 35, app/assets/stylesheets/jat.scss */
+ul {
+  list-style: none;
+}
+
+/* line 39, app/assets/stylesheets/jat.scss */
+.btn-1 {
+  background-color: #5A0380;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shodow-black-300);
+  font-weight: 500;
+}
+
+/* line 51, app/assets/stylesheets/jat.scss */
+.btn-2 {
+  background-color: #5A0380;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 6px;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shodow-black-100);
+  font-weight: 500;
+}
+
+/* line 63, app/assets/stylesheets/jat.scss */
+.btn-1:focus {
+  box-shadow: #d1d1d1;
+}
+
+/* line 66, app/assets/stylesheets/jat.scss */
+.btn-1:hover {
+  color: #f7f7f7;
+  background-color: #8016ad;
+}
+
+/* line 70, app/assets/stylesheets/jat.scss */
+.btn-2:focus {
+  box-shadow: #d1d1d1;
+}
+
+/* line 73, app/assets/stylesheets/jat.scss */
+.btn-2:hover {
+  color: #f7f7f7;
+  background-color: #8016ad;
+}
+
+/*Fonts*/
+/*Navabr*/
+/* line 84, app/assets/stylesheets/jat.scss */
+.navbar {
+  padding: 20px 0;
+}
+
+/* line 88, app/assets/stylesheets/jat.scss */
+.navbar > .container {
+  padding: 0 15px;
+}
+
+/* line 91, app/assets/stylesheets/jat.scss */
+.navbar .navbar-brand {
+  font-size: size 30px;
+  color: #5A0380;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* line 99, app/assets/stylesheets/jat.scss */
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* line 105, app/assets/stylesheets/jat.scss */
+.navbar .nav-item {
+  margin-left: 40px;
+}
+
+/* line 109, app/assets/stylesheets/jat.scss */
+.navbar .nav-item .nav-link {
+  color: #5A0380;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0;
+  position: relative;
+}
+
+/* line 118, app/assets/stylesheets/jat.scss */
+.navbar .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: #5A0380;
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+
+/* line 129, app/assets/stylesheets/jat.scss */
+.navbar .nav-item .nav-link:active::before,
+.navbar .nav-item .nav-link:hover::before {
+  transform: scale(1);
+}
+
+/* line 134, app/assets/stylesheets/jat.scss */
+.home {
+  min-height: 100vh;
+  padding: 150px 0;
+  background-color: var(--main-to-dark-color);
+}
+
+/* line 139, app/assets/stylesheets/jat.scss */
+.home-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #5A0380;
+  margin: 0 0 20px;
+}
+
+/* line 146, app/assets/stylesheets/jat.scss */
+.home-text h2 {
+  font-weight: 700;
+  color: #b1b1b1;
+  margin: 0 0 20px;
+}
+
+/* line 153, app/assets/stylesheets/jat.scss */
+.home-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #737B7D;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* line 161, app/assets/stylesheets/jat.scss */
+.home .home-btn {
+  margin-top: 40px;
+}
+
+/* line 164, app/assets/stylesheets/jat.scss */
+.home-img img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* line 169, app/assets/stylesheets/jat.scss */
+.home-img {
+  position: relative;
+}
+
+/*Tarjetitas--------------------------------------------------------*/
+/* line 175, app/assets/stylesheets/jat.scss */
+.section-padding {
+  padding: 10px 0;
+}
+
+/* line 178, app/assets/stylesheets/jat.scss */
+.section-title {
+  margin-bottom: 60px;
+}
+
+/* line 181, app/assets/stylesheets/jat.scss */
+.section-title h2 {
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* line 189, app/assets/stylesheets/jat.scss */
+.section-title p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #737B7D;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* line 197, app/assets/stylesheets/jat.scss */
+.section-title h2 span {
+  color: #5A0380;
+}
+
+/* line 201, app/assets/stylesheets/jat.scss */
+.features .feature-item {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 209, app/assets/stylesheets/jat.scss */
+.features .feature-item .icon {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 30px;
+  color: royalblue;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 220, app/assets/stylesheets/jat.scss */
+.features .feature-item .icon i {
+  line-height: 60px;
+}
+
+/* line 224, app/assets/stylesheets/jat.scss */
+.features .feature-item h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  color: #111010;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* line 232, app/assets/stylesheets/jat.scss */
+.features .feature-item p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  font-weight: 300;
+  margin: 0;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/* line 241, app/assets/stylesheets/jat.scss */
+.app-download {
+  background-image: url("../img/driver1.jpeg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 249, app/assets/stylesheets/jat.scss */
+.app-download .section-title h2 {
+  color: #f7f7f7;
+}
+
+/* line 252, app/assets/stylesheets/jat.scss */
+.app-download::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #5A0380;
+  opacity: 0.8;
+}
+
+/* line 264, app/assets/stylesheets/jat.scss */
+.app-download-item {
+  background-color: #f7f7f7;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  --shodow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* line 272, app/assets/stylesheets/jat.scss */
+.app-download-item i {
+  font-size: 30px;
+  color: #5A0380;
+  display: inline-block;
+}
+
+/* line 277, app/assets/stylesheets/jat.scss */
+.app-download-item h3 {
+  font-size: 22px;
+  color: #5A0380;
+  --black-900: #111010;
+  margin: 20px 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* line 286, app/assets/stylesheets/jat.scss */
+.app-download-item p {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 300;
+  margin: 0 0 30px;
+  line-height: 26px;
+}
+
+/* line 294, app/assets/stylesheets/jat.scss */
+.mgg {
+  margin-top: 60px;
+}
+
+/* line 298, app/assets/stylesheets/jat.scss */
+.mgg1 {
+  margin-bottom: 60px;
+}
+
+/*------------------------------------------------------------------*/
+/* line 303, app/assets/stylesheets/jat.scss */
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* line 310, app/assets/stylesheets/jat.scss */
+form {
+  width: 560px;
+}
+
+/* line 314, app/assets/stylesheets/jat.scss */
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+/* line 317, app/assets/stylesheets/jat.scss */
+.contact-form .form-control {
+  height: 52px;
+  border: 1px solid #ececec;
+  box-shadow: 0 5px 15px rgba(87, 87, 87, 0.1);
+  border-radius: 6px;
+  padding: 0 24px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+/* line 327, app/assets/stylesheets/jat.scss */
+.contact-form textarea.form-control {
+  height: 140px;
+  padding-top: 12px;
+  resize: none;
+}
+
+/* line 332, app/assets/stylesheets/jat.scss */
+.contact-form .form-control:focus {
+  border-color: #5A0380;
+}
+
+/* line 336, app/assets/stylesheets/jat.scss */
+::-moz-placeholder {
+  color: #969595;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #969595;
+  opacity: 1;
+}
+::placeholder {
+  color: #969595;
+  opacity: 1;
+}
+
+/* line 341, app/assets/stylesheets/jat.scss */
+textarea::-webkit-input-placeholder {
+  color: #969595;
+}
+
+/* line 345, app/assets/stylesheets/jat.scss */
+label {
+  color: #969595;
+  margin: 0 0 12px;
+}
+
+/* line 350, app/assets/stylesheets/jat.scss */
+#tama {
+  font-size: 36px;
+}
+
+/* line 354, app/assets/stylesheets/jat.scss */
+option selected {
+  color: #969595;
+}
+
+/* line 359, app/assets/stylesheets/jat.scss */
+.color {
+  height: 52px;
+  border: 1px solid #ececec;
+  box-shadow: 0 5px 15px rgba(87, 87, 87, 0.1);
+  border-radius: 6px;
+  padding: 0 24px;
+  color: #5A0380;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+/*Footer*/
+/* line 374, app/assets/stylesheets/jat.scss */
+.footer-basic {
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #5A0380;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* line 382, app/assets/stylesheets/jat.scss */
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* line 391, app/assets/stylesheets/jat.scss */
+.footer-basic li {
+  padding: 0 10px;
+}
+
+/* line 395, app/assets/stylesheets/jat.scss */
+.footer-basic a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+/* line 401, app/assets/stylesheets/jat.scss */
+.footer-basic ul {
+  text-decoration: none;
+}
+
+/* line 407, app/assets/stylesheets/jat.scss */
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+/* line 411, app/assets/stylesheets/jat.scss */
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+/* line 416, app/assets/stylesheets/jat.scss */
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 8px;
+  color: #f7f7f7;
+}
+
+/* line 430, app/assets/stylesheets/jat.scss */
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+/* line 434, app/assets/stylesheets/jat.scss */
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 0;
+  opacity: 0.50;
+}
